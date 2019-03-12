@@ -1,0 +1,387 @@
+@font-face {
+    font-family: Digital;
+    src: url("fonts/digital-7/digital-7.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Digital;
+    src: url("fonts/digital-7/digital-7 (italic).ttf");
+    font-style: italic;
+}
+@font-face {
+    font-family: Square;
+    src: url("fonts/tt-squares-condensed/TT Squares Condensed Bold.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: Square;
+    src: url("fonts/tt-squares-condensed/TT Squares Condensed Bold Italic.otf");
+    font-style: italic;
+    font-weight: normal;
+}
+
+header {
+    padding: 0.438em 0;
+    position: absolute;
+    width: 100%;
+}
+.header-rect {
+    width: 100%;
+    height: 100%;
+    background-color: #0c1013;
+    opacity: .9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+.header-center {
+    width: 62.500em;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 3;
+}
+.head-div {
+    background-size: contain;
+    position: relative;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+.logo {
+    width: 10.750em;
+    height: 2.750em;
+    background-image: url("img/Logo.png");
+    background-position: 50% 50%;
+}
+.headerTitle {
+    margin-left: 14.000em;
+    width: 20.188em;
+    height: 3.813em;
+    background-image: url("img/headerRectangle.png");
+    background-size: contain;
+    color: #fff;
+    font-family: Square, Arial, sans-serif;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.headerTitle h1 {
+    font-size: 1.625em;
+    text-transform: uppercase;
+}
+
+.headerTitle p {
+    font-size: 1em;
+}
+.headerTitle p span {
+    color: #fdc000;
+}
+.headerTimer {
+    width: 17.500em;
+    height: 3.813em;
+    background-image: url("img/timerHeader.png");
+    display: flex;
+}
+.timerBlock {
+    display: flex;
+    flex-direction: column;
+    width: 4.375em;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    border-right: 1px solid #22262c;
+}
+.timerBlock:last-child{
+    border: none;
+}
+.timerBlock > div span {
+    font-size: 2.500em;
+    color: #d71015;
+    font-family: Digital, Arial, sans-serif;
+}
+span b {
+    color: #262626;
+}
+.text {
+    font-size: 0.563em;
+    color: #fff;
+    font-weight: bold;
+}
+main {
+    width: 120.000em;
+    height: 48.750em;
+    background-image: url("img/bg.png");
+    background-size: cover;
+    position: relative;
+}
+.main-center{
+    width: 71.438em;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 2.188em;
+}
+.main-title {
+    padding-top: 23.125em;
+}
+.main-title h1 {
+    font-size: 0.688em;
+    color: #fff;
+}
+.main-money {
+    padding-top: 1.875em;
+    font-family: Square, Arial, sans-serif;
+}
+.main-money b{
+    color: #fff;
+    font-size: 3.0em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+}
+.main-money span {
+    border-top: 1px solid #39243d;
+    border-bottom: 1px solid #39243d;
+    color: #d71015;
+}
+.big-ben{
+    position: absolute;
+    width: 13.000em;
+    height: 29.375em;
+    background-image: url("img/Bben.png");
+    bottom: -12em;
+    left: 13.125em;
+    background-size: contain;
+    opacity: 0;
+    transition: .5s;
+    animation: imgAnimate 4s linear infinite;
+}
+@keyframes imgAnimate {
+    from, to {
+        transform: translate(0);
+    }
+    25% {transform: translateX(3px) translateY(2px)}
+    50%{transform: translateX(-3px);}
+    75% {transform: translateX(2px) translateY(3px)}
+}
+.big-ben-new {
+    top: 3.125em;
+    left: 13.125em;
+    opacity: 1;
+    transition: .5s;
+}
+.bridge{
+    position: absolute;
+    width: 54.750em;
+    height: 20.875em;
+    background-image: url("img/Bridge.png");
+    right: -9.063em;
+    bottom: -3.125em;
+    background-size: contain;
+    animation: imgAnimate 4s linear infinite;
+    opacity: 0;
+}
+.bridge-new {
+    right: -9.063em;
+    top: 3.125em;
+    opacity: 1;
+}
+.team-group{
+    width: 71.438em;
+    height: 34.313em;
+    background-image: url("img/teamGroup.png");
+    position: relative;
+    z-index: 2;
+    background-size: contain;
+    text-align: center;
+}
+.let-begin {
+    width: 63.875em;
+    height: 8.313em;
+    background-image: url("img/bottom.png");
+    background-size: contain;
+    margin-top: 0.875em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    font-family: Square, Arial, sans-serif;
+    font-style: italic;
+}
+.let-title {
+    font-size: 4.000em;
+}
+.let-span {
+    font-size: 1.875em;
+}
+.let-span b {
+    color: #d71015;
+}
+.let-btn {
+    width: 23.563em;
+    height: 5.500em;
+    background-image: url("img/btn.png");
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    animation: btnAnimate 5s linear infinite;
+}
+.let-btn:hover span{
+    color: #fff;
+}
+.let-btn:active span{
+    color: #d71015;
+}
+@keyframes btnAnimate {
+    from, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+.let-btn span {
+    font-size: 2.000em;
+    color: #0b1019;
+    font-weight: bold;
+}
+
+
+
+@media (max-width: 1000px) {
+    .header-center {
+        justify-content: center;
+        width: 100%;
+    }
+    .logo {
+        width: 9.938em;
+        height: 2.563em;
+        background-image: url("img/Logo720.png");
+    }
+    .headerTitle {
+        position: absolute;
+        top: 4.875em;
+        left: 17.125em;
+        margin-left: 0;
+        width: 18.438em;
+        height: 3.563em;
+        background-image: url("img/headerRectangle720.png");
+    }
+    .headerTitle h1 {
+        font-size: 1.500em;
+    }
+    .headerTitle p {
+        font-size: 0.875em;
+    }
+    .headerTimer {
+        position: absolute;
+        top: 4.875em;
+        left: 35.563em;
+        width: 16.000em;
+        height: 3.563em;
+        background-image: url("img/timerHeader720.png");
+    }
+    .timerBlock {
+        width: 3.750em;
+    }
+    .timerBlock > div span {
+        font-size: 2.250em;
+    }
+    .text {
+        font-size: 0.500em;
+    }
+    main {
+        width: 100%;
+        height: 48.000em;
+        background-image: url("img/bg720.png");
+    }
+    .main-center {
+        padding-top: 5.938em;
+        width: 50.625em;
+    }
+    .big-ben-new {
+        top: 6.875em;
+    }
+    .bridge-new {
+        top: 6.875em;
+    }
+    .team-group {
+    }
+    .main-title {
+        width: 12.500em;
+        padding-top: 21.250em;
+        margin: 0 auto;
+    }
+    .team-group {
+    }
+    .big-ben{
+        animation: imgAnimate 3s linear infinite;
+    }
+    .bridge{
+        animation: imgAnimate 3s linear infinite;
+    }
+}
+@media (max-width: 800px) {
+    .head-div {
+        background-size: cover;
+    }
+    .headerTitle {
+        position: absolute;
+        top: 4.875em;
+        left: 21.000em;
+        margin-left: 0;
+        background-image: url("img/headerRectangle320.png");
+    }
+    .headerTimer {
+        position: absolute;
+        top: 8.688em;
+        left: 21.188em;
+        width: 20.188em;
+        background-image: url("img/timerHeader320.png");
+    }
+    .main {
+    }
+    .big-ben-new {
+        top: 6.875em;
+    }
+    .bridge-new {
+        top: 6.875em;
+    }
+    .main-center {
+        padding-top: 5.938em;
+    }
+    .team-group {
+    }
+    .main-title {
+        width: 12.500em;
+        padding-top: 21.250em;
+        margin: 0 auto;
+    }
+    .team-group {
+    }
+    .big-ben{
+        animation: imgAnimate 3s linear infinite;
+    }
+    .bridge{
+        animation: imgAnimate 3s linear infinite;
+    }
+}
+@media (max-width: 1000px) {
+}
+.blick {
+    width: 40.813em;
+    height: 20.688em;
+    background-image: url("img/blick.png");
+    position: absolute;
+    bottom: -2.5em;
+    left: 0;
+}
